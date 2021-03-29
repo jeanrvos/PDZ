@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Almond Nougat', cursive;
+}
+
+@font-face {
+    font-family: 'Almond Nougat';
+    src: url('assets/almondnougat.ttf');
+}
+
+body {
+    background: white url('assets/background.jpg') repeat;
+    background-position: initial top left;
+    background-size: auto;  
+    
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: #FCD9AF;
+    border-bottom: 2px solid black;
+}
+
+img {
+    max-width: 400px;
+    border-radius: 15px 15px 0 0;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+span {
+    font-size: 34px;
+    font-weight: 800;
+}
+
+p {
+    font-size: 24px;
+    text-align: justify;
+    margin: 5px 15px;
+}
+
+.esquerda {
+    margin-left: 45px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;  
+}
+
+.esquerda .prato-um {
+    background-color: yellowgreen;    
+}
+
+.esquerda .prato-dois {
+    background-color: yellow;    
+}
+
+.meio {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;    
+}
+
+.meio .prato-um {
+    background-color: red;
+}
+
+.meio .prato-dois {
+    background-color: orangered;
+}
+
+.direita {
+    margin-left: auto;
+    margin-right: 45px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;    
+}
+
+.direita .prato-um {
+    background-color: blueviolet;
+}
+
+.direita .prato-dois {
+    background-color: violet;
+}
+
+.card {
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px 0 black;
+    margin: 10px;
+}
+
+.conteudo {
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+
+

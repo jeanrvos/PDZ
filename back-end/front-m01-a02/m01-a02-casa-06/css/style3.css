@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Akaya Telivigala', monospace;
+    font-size: 20px;
+    color: white;
+}
+
+body {
+    background: white url('../img/notes.jpg') no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: darkcyan;
+    text-align: center;
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 40px;    
+}
+
+h1, h2 {
+    text-shadow: 0 3px black;
+}
+
+h2, p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+h4 {
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+h4, h4 a{
+    color: black;
+}
+
+.capa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+.capa img {
+    height: 500px;  
+    border-radius: 50%; 
+}
+
+.conteudo {
+    background-color: darkcyan;
+    border-radius: 15px;
+    margin: 30px;    
+}
+
+.capa img, .conteudo {
+    box-shadow: 0 3px 8px 0 black;
+}
+
+.historia, .preferida, .minha-historia {
+    padding: 20px;
+}
+
+.preferida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    display: flex;
+    margin: auto;
+}
+
+.preferida a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.lista img {
+    border-radius: 5px;
+}
+
+.minha-historia {
+    display: flex;
+    flex-direction: column;
+}
+
+.minha-historia img {
+    width: 500px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 3px 8px 0 black;
+}

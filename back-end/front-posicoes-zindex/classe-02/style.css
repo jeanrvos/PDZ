@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(257, 40%, 49%) url('assets/background.svg') no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.conteudo {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.mockups img {
+    width: 700px;
+}
+
+.texto {
+    width: 35%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+button {
+    all: unset;
+}
+
+button {
+    background-color: #FFFFFF;
+    color: hsl(257, 40%, 49%);
+    width: 10em;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0 1px 8px 0 black;    
+}
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #FFFFFF;
+}
+
+.rodape {
+    margin-left: auto;
+    display: inline-flex;
+}
+
+.fab {
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    padding: 10px;
+    margin-left: 5px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.fa-facebook-f {
+    padding-left: 13px;
+}
+
+.fa-instagram {
+    padding-left: 12px;
+}
+
+.fab:hover {
+    border: 1px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}

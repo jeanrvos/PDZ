@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Kiwi Maru', serif;
+    color: red;
+    margin: 15px;
+    
+}
+
+h1 {
+    font-family: 'Staatliches', cursive;
+    font-size: 80px;
+    text-align: center;
+    color: red;
+    text-shadow: 3px 3px white;
+    padding: 35px;
+}
+
+.tabela {
+    display: flex;
+    justify-content: center;
+    background: orangered;   
+    border-collapse: collapse;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+th{
+    background: red;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding: 15px;
+}
+
+td {
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.filmes {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 20px 0;
+}
+
+.card {
+    background: black;
+    min-height: 540px;
+    border-radius: 15px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 2px 10px 0 red;
+}
+
+.genero {
+    font-family: 'Staatliches', cursive;
+    font-size: 60px;
+    text-shadow: 0 3px white;
+    text-align: center;
+    color: red;
+    width: 25%;
+}
+
+.card img {
+    height: 400px;
+    border-radius: 5px;
+    border: 3px dashed red;
+}
+
+.info {
+    width: 45%;
+    padding: 10px;
+}
+
+h3 {
+    color: white;
+}
+
+p {
+    margin: 10px 0;
+}
+
+a {
+    color: red;
+}
