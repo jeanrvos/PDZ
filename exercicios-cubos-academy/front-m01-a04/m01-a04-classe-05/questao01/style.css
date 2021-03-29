@@ -1,0 +1,35 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho, .menu-lateral {
+    background-color: royalblue;
+}
+
+
+.conteudo {
+    background-color: palevioletred;
+    flex-grow: 1;
+    margin-left: 5px;
+}
+
+.rodape {
+    background-color: lawngreen;
+}
+
+.meio {
+    display: flex;
+    flex-grow: 1;
+    margin: 5px 0;
+}
+
+
+.cabecalho, .menu-lateral, .conteudo, .rodape {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}

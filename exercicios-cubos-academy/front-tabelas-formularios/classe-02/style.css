@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    box-shadow: 0 2px 0 0 #009879, 0 3px 5px 0 black;
+}
+
+th{
+    background-color: #009879;
+    color: #FFFFFF;
+    padding: 15px;
+}
+
+tr:nth-child(even) {
+    background-color: #F3F3F3;
+}
+
+td {
+    border-bottom: 1px solid #413E3E;
+    padding: 10px;
+}
+
+

@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(0, 100%, 74%) url('assets/background.png');
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+}
+
+.esquerda {
+    color: #ffffff;
+}
+
+.esquerda, .direita {
+    width: 38%;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 35px;
+}
+
+.card input {
+    width: 100%;
+}
+
+button {
+    width: 100%;
+}
+
+.botao1 {
+    background-color: hsla(248, 32%, 49%);
+    color: #ffffff;
+    border: 0;
+    padding: 20px;
+}
+
+.botao2 {
+    background-color: hsl(154, 59%, 51%);
+    color: #ffffff;
+}
+
+button {
+    border: 0;
+}
+
+button, input {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.botao1, .card {
+    border-radius: 10px;
+}
+
+.botao2 {
+    border-radius: 5px;
+}
+
+.botao1, .card {
+    box-shadow: 0 7px 0 0 hsla(120, 80%, 35%, 0.3);
+}
+
+.botao2 {
+    box-shadow: 0 5px 0 0 hsla(120, 40%, 40%, 0.8);
+}
+
+.botao2:hover {
+    background-color: hsla(120, 40%, 70%, 0.8);
+}
+
+form p {
+    color: hsl(246, 25%, 77%);
+    font-size: 10px;
+    text-align: center;    
+}
+
+p span {
+  color: hsl(0, 100%, 74%);
+}

@@ -1,0 +1,27 @@
+body {
+	margin: 8px;
+}
+
+.container, .item1, .item2, .item3 {
+	border: 2px solid black;
+	border-radius: 8px;
+	padding: 16px;
+}
+
+.container {
+	background-color: #995db5;
+	display: flex;
+    height: 300px;
+	justify-content: center;
+	align-items: center;
+}
+
+.item1, .item2, .item3 {
+	background-color: #f7941f;
+    flex-shrink: 0;
+	flex-basis: 200px;
+}
+
+.item2 {
+    margin-top: auto;
+}
