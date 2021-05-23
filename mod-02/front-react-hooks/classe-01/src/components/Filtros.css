@@ -1,0 +1,25 @@
+.container-filtros {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 0.8em;
+}
+
+.filtro {
+    all: unset;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filtro:hover, .limpar-completadas:hover {
+    color: hsl(235, 19%, 35%);
+}
+
+.filtro-ativo {
+    color: hsl(220, 98%, 61%);
+
+}
+
+.limpar-completadas {
+    all: unset;
+    cursor: pointer;
+}

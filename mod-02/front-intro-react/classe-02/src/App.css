@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+  display: grid;
+  grid-template-areas: "card card card card";
+  gap: 20px;
+  background-color: black;  
+}
+
+.card {
+  margin-top: 50px;
+}
+
+.card img {
+  border-radius: 7px;
+}
+
+.card h2 {
+  color: #fff;
+}

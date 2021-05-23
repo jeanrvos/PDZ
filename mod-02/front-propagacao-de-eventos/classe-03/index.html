@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Exercício de classe</title>
+
+    <script>
+      window.addEventListener(
+        "load", () => {
+          const cores = [{
+            cor: "red", nome: "Vermelho"
+          }, {
+            cor: "green", nome: "Verde"
+          }, {
+            cor: "blue", nome: "Azul"
+          }, {
+            cor: "yellow", nome: "Amarelo"
+          }, {
+            cor: "black", nome: "Preto"
+          }, {
+            cor: "orange", nome: "Laranja"
+          }, {
+            cor: "purple", nome: "Roxo"
+          }];        
+
+          const body = document.querySelector('body');
+          const nomeCor = document.querySelector('.cor');
+
+          const { cor, nome } = cores[Math.floor(Math.random() * cores.length)];
+          body.style.color = cor;
+          nomeCor.innerText = nome;
+        }
+      );      
+    </script>
+  </head>
+
+  <body>
+    <h1>Minha cor é: <span class="cor"></span></h1>
+  </body>
+
+</html>

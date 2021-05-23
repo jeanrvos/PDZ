@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de classe</title>
+
+    <style>
+      body {
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+      }
+
+      img {
+        max-width: 200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <img src="balao.png" alt="Um balão">
+  </body>
+
+  <script>
+    const balao = document.querySelector('img');
+    let contador = 1;
+
+    balao.addEventListener('click', crescer);
+    balao.addEventListener('click', estourar);
+            
+    function crescer() {
+      contador+= 0.1;  
+      balao.style.transform = `scale(${contador})`;      
+    }   
+    
+    function estourar() {
+      if (contador >= 2) {
+        balao.src = "estouro.svg";
+        balao.removeEventListener('click', crescer);
+        return;
+      }
+    } 
+
+  </script>
+
+</html>

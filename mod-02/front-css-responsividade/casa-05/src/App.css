@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 55px 165px 0;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  color: #7B8BAD;
+}
+
+h1, h2 {
+  color: #162542;
+}
+
+.gray-square-element {
+  display: none;
+  position: absolute;
+  width: 135px;
+  height: 240px;
+  background-color: #E8EFF2;
+  border-radius: 20px 0 0 20px;
+  top: 196px;
+  right: 0px;
+}
+
+.gray-square-element2 {
+  display: none;
+  position: absolute;
+  width: 135px;
+  height: 240px;
+  background-color: #E8EFF2;
+  border-radius: 0 20px 20px 0;
+  top: 950px;
+  left: 0px;
+}
+
+.buttons:first-child {
+  background-color: #F16718;
+}
+
+@media (min-width: 1440px) {
+  .gray-square-element {
+    display: block;
+  }
+
+  .gray-square-element2 {
+    display: block;
+  }  
+}
+
+@media (width: 768px) {
+  .App {
+    padding: 49px 39px;
+  }
+}
+
+@media (width: 375px) {
+  .App {
+    padding: 24px;
+  }
+}

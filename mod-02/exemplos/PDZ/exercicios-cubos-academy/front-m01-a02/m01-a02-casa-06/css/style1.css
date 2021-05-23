@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 20px;
+    color: #F22F1D;
+}
+
+body {
+    background-color: #F1E8FC;    
+}
+
+h1{
+    font-size: 80px;
+    padding-left: 30px;
+    text-shadow: 0 1px black;
+}
+
+h2 {
+    font-size: 30px;
+    text-shadow: 0 1px black;
+}
+
+h2, p {
+    margin-bottom: 30px;
+}
+
+h4 {
+    color: #F22F1D;
+    text-align: center;
+}
+
+.capa {
+    display: inline-flex;
+    align-items: center;
+}
+
+.capa img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px 0 black;
+}
+
+div {
+    margin: 40px 10px;
+}
+
+.historia {
+    font-size: 20px;
+    color: #F22F1D;
+}
+
+ol {
+    margin-left: 30px;
+}
+
+.minha-historia {
+    display: flex;
+    flex-direction: column;
+}
+
+.minha-historia img{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}

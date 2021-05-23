@@ -1,0 +1,32 @@
+.container-filtros {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.filtro {
+    all: unset;
+    flex-basis: 168px;
+    background: rgba(225, 131, 200, 0.2);
+    opacity: 0.2;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #FFF;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    border: 2px solid #FFF;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.filtro:hover {
+    color: hsl(235, 19%, 35%);
+}
+  
+.filtro-ativo {
+    opacity: 1;
+    border: 2px solid #E183C8;
+    color: #E183C8;
+}

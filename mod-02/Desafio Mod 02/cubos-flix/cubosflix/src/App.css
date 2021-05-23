@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  font-family: 'Manrope', sans-serif;
+  background-color: #1D2226;
+  width: 100vw;
+}
+
+.App .content-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 24px 0 96px;
+}
+
+.App .main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+header .menu-container {
+  display: flex;
+  background-color: #0F1C26;
+  color: #FFFFFF;
+  justify-content: space-between;
+  align-items: center;
+  height: 104px;
+  padding: 0 90px 0 80px;
+}
+
+header .input-container {
+  display: flex;
+  background-color: #171B1E;
+  width: 456px;
+  padding: 0 28px 0 13px;
+}
+
+header .input-container input {
+  all: unset;
+  width: 406px;
+  height: 56px;
+  background-color: #171B1E;
+  color: white;  
+}
+
+header .input-container button {
+  all: unset;
+  cursor: pointer;
+}
+
+header .input-container button img {
+  width: 24px;
+  height: 24px;
+}
+
+header .favoritos {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+header .promocoes {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+header .usuario {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+header .usuario img {
+  width: 56px;
+  height: 56px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.container-movies {
+  display: flex;
+  max-width: 937px;
+  gap: 24px;
+}
+
+.section-one .container-movies {
+  flex-wrap: nowrap;
+}
+
+.section-two .container-movies {
+  flex-wrap: wrap;
+}
+
+.titulo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.aside {
+  grid-area: sacola;
+  font-family: "Manrope", sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.sacola {
+  position: fixed;
+  right: 24px;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 312px;
+}
+
+.sacola .bag-header {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  color: #fdfdfd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding: 14px 0;
+  background-color: #a785ed;
+}
+  
+.bag-content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  padding: 20px;
+}
+
+.sacola .bag-footer {
+  box-sizing: border-box;
+  margin: 0 16px 24px 16px;
+}
+
+.sacola .bag-footer p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  color: #fdfdfd;
+  text-align: left;
+  margin: 5px 0px;
+}
+
+.sacola .bag-footer .divInputCupom {
+  background-color: #0b1217;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.sacola .bag-footer .divInputCupom input {
+  width: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fdfdfd;
+  opacity: 0.4;
+  background-color: transparent;
+  border: none;
+  padding: 8px 16px;
+}
+
+.sacola .bag-footer .divInputCupom input:hover {
+  outline: 1px solid #8c8c8c;
+}
+
+.sacola .bag-footer .divInputCupom input:focus {
+  outline: 1px solid #fdfdfd;
+}
+
+.sacola .bag-footer .divInputCupom img {
+  position: absolute;
+  right: 16px;
+}
+
+.sacola .bag-footer button {
+  box-sizing: content-box;
+  all: unset;
+  cursor: pointer;
+  width: calc(100% - 40px);
+  padding: 16px;
+  text-align: center;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  background-color: rgba(226, 94, 191);
+  color: #fdfdfd;
+  margin-top: 24px;
+}
+
+.sacola .bag-footer button:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(225, 123, 123, 0.45),
+      rgba(225, 123, 123, 0.45)
+    ),
+    #ffb6eb;
+  box-shadow: 0px 16px 24px -12px rgba(226, 94, 191, 0.16);
+}
+
+.sacola .bag-footer button:active {
+  background: linear-gradient(
+      0deg,
+      rgba(225, 123, 123, 0.6),
+      rgba(225, 123, 123, 0.6)
+    ),
+    #ffb6eb;
+  box-shadow: 0px 16px 24px -12px rgba(226, 94, 191, 0.5);
+}

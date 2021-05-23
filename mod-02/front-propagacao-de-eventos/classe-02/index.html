@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de classe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="grid">
+        <div class="card">
+          <img src="https://picsum.photos/seed/123/256/450" class="img card__img">
+          <i class="far fa-heart"></i>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/seed/456/256/450" class="img card__img">
+          <i class="far fa-heart"></i>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/seed/789/256/450" class="img card__img">
+          <i class="far fa-heart"></i>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/seed/101/256/450" class="img card__img">
+          <i class="far fa-heart"></i>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/seed/112/256/450" class="img card__img">
+          <i class="far fa-heart"></i>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/seed/131/256/450" class="img card__img">
+          <i class="far fa-heart"></i>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/seed/415/256/450" class="img card__img">
+          <i class="far fa-heart"></i>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/seed/161/256/450" class="img card__img">
+          <i class="far fa-heart"></i>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content">
+    </div>
+  </body>
+
+  <script>
+
+    const cards = document.querySelectorAll('.card');
+    const coracoes = document.querySelectorAll('i.fa-heart');
+    const modal = document.querySelector('.modal');
+    const imgModal = document.querySelector('.modal-content');
+    const botaoModal = document.querySelector('.close');
+
+    function curtir(event) {
+      event.target.classList.toggle("curtido");
+      event.target.classList.toggle("far");
+      event.target.classList.toggle("fas");
+
+      event.stopPropagation();
+    }
+    
+    for (const coracao of coracoes) {
+      coracao.addEventListener('click', curtir);
+    }   
+
+    function abrirModal(event) {
+      modal.classList.add("modal-aberto");
+      const img = event.target.querySelector('img');
+      imgModal.src = img.src;      
+    }
+
+    for (const card of cards) {
+      card.addEventListener('click', abrirModal)
+    }
+
+    botaoModal.addEventListener('click', () => {
+      modal.classList.remove("modal-aberto");
+    });
+
+  </script>
+
+</html>

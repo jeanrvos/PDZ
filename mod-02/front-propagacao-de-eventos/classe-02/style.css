@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,300&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+    color: white;
+}
+
+body {
+  padding: 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, 256px);
+}
+
+.card {
+  width: 256px;
+  height: 450px;
+  position: relative;
+  padding: 32px 40px;
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+.card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  overflow:hidden;
+}
+
+.card i {
+  cursor: pointer;
+  font-size: 32px;
+  color: rgb(217, 238, 241);
+  background: rgba(37, 37, 37, 0.5);
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.card .curtido {
+  color: rgb(241, 77, 77);
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 100px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  padding: 100px 0; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.9); 
+}
+
+.modal.modal-aberto {
+  display: block;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}

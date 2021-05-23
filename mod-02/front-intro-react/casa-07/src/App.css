@@ -1,0 +1,21 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  margin-top: 5px;
+}
+
+form label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

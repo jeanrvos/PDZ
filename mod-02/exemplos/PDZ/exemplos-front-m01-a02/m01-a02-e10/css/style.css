@@ -1,0 +1,17 @@
+
+body {
+            
+    background: black url('../fluffy-rabbit.jpg') center/cover no-repeat;            
+}
+
+h1{
+    font-size: 70px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-white {
+    color: white;
+}

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital@0;1&display=swap');
+
+.cupom {
+  position: relative;
+  box-sizing: border-box;
+  font-family: "Quantico", sans-serif;
+  height: 119px;
+  width: 100%;
+  background-image: url("./bg-promotion.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 51px 16px 24px;
+  grid-area: cupom;
+  cursor: pointer;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.tituloCupom {
+  display: flex;
+  flex-direction: column;
+}
+
+.tituloCupom > h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #0f0915;
+  opacity: 0.8;
+}
+
+.codigoCupom {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #0f0915;
+  opacity: 0.8;
+  font-family: "Quantico", sans-serif;
+}
+
+.codigoCupom img,
+.contadorCupom img {
+  height: 32px;
+  width: 32px;
+}
+
+.contadorCupom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.contadorCupom > h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #0f0915;
+  opacity: 0.8;
+}
+
+.contador {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #0f0915;
+  opacity: 0.8;
+}
+
+.dinheiro {
+  position: relative;
+  right: -51px;
+  bottom: 16px;
+  justify-self: flex-end;
+}
+
+
+/* .banner-cupom {
+  position: relative;
+  background-image: url('./bg-promotion.svg');
+  width: 937px;
+  height: 119px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 51px 0 24px;
+  font-family: 'Quantico', sans-serif;
+  font-size: 16px;
+  color: #0F0915;
+  margin-bottom: 40px;
+}
+
+.banner-cupom h1 {
+  font-size: 40px;
+}
+
+.banner-cupom h2 {
+  font-size: 24px;
+}
+
+.bg-icon {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  background-image: linear-gradient(hsla(259, 80%, 92%, 1), hsla(259, 80%, 77%, 1));
+  border-radius: 50%;
+}
+
+.cupom-desconto {
+  display: grid;
+  grid-auto-flow: column;
+  place-content: left;
+  align-items: center;
+  gap: 2px;
+}
+
+hr {
+  height: 46px;
+  color: #F294D8;
+  opacity: 0.2;
+}
+
+.prazo-cupom {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.tempo-cupom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.banner-cupom .money-img {
+  width: 200px;
+}
+
+.banner-cupom .money-img img {
+  position: absolute;
+  right: 51px;
+  bottom: 0;
+} */
+

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.cronometro {
+    display: grid;
+    justify-items: center;
+    background-image: url('./stopwatch.png');
+    background-size: 500px 500px;
+    width: 500px;
+    height: 500px;    
+}
+
+.fundo-cronometro {
+    margin-top: 9.7em;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.display-cronometro {
+    display: grid;
+    grid-auto-flow: row;
+    place-items: center;
+    
+}
+
+.tempo {
+    font-size: 6em;
+}
+
+.unidade {
+    font-size: 3em;
+}
+
+.marca {
+    margin-top: 2em;
+    text-align: center;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 10px;
+}
+
+button {
+    all: unset;
+    padding: 0.5em;
+    font-size: 20px;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+}
+
+.botoes {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1em;
+}
+
+footer {
+    color: white;
+    border-radius: 10px 10px 0 0;
+    padding: 1em;
+}
+
+.claro, .escuro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    min-height: 700px;
+    font-family: 'Orelega One', cursive;
+}
+
+.escuro {
+    background-color: black;
+    color: white;
+}
+
+.claro button {
+    background-color: hsl(220, 100%, 50%);
+    border: 2px solid hsl(220, 100%, 50%);
+    color: white;
+}
+
+.escuro button {
+    background-color: hsl(0, 0%, 20%);
+    border: 2px solid hsl(0, 0%, 20%);
+    color: white;
+}
+
+.claro .botoes button {
+    border-radius: 10px;
+}
+
+.escuro .botoes button {
+    border-radius: 10px;
+}
+
+.claro button:hover {
+    background-color: white;
+    border: 2px solid hsl(220, 100%, 50%);
+    color: hsl(220, 100%, 50%);
+}
+
+.escuro button:hover {
+    background-color: white;
+    border: 2px solid hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 20%);
+}
+
+.claro .fundo-cronometro {
+    background-color: black;
+    border: 3px dashed hsl(220, 100%, 50%);
+}
+
+.escuro .fundo-cronometro {
+    background-color: white;
+    border: 3px dashed black;
+}
+
+.claro .display-cronometro {
+    color: white;
+}
+
+.escuro .display-cronometro {
+    color: black;
+}
+
+.marca {
+    color: hsl(220, 100%, 50%);
+}
+
+.claro footer {
+    background-color: hsl(220, 100%, 50%);
+}
+
+.escuro footer {
+    background-color: hsl(0, 0%, 20%);
+    
+}
+

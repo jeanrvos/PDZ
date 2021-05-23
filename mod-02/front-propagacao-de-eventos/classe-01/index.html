@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de classe</title>
+
+    <style>
+      body {
+        display: grid;
+        place-content: center;
+        gap: 16px;
+        min-height: 100vh;
+        font-family: sans-serif;
+      }
+
+      .card {
+        background: #DEDEDE;
+        border: 1px solid #BBB;
+        border-radius: 8px;
+        max-width: 300px;
+        padding: 12px;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      button {
+        all: unset;
+        cursor: pointer;
+        display: grid;
+        place-content: center;
+        padding: 9px;
+        border-radius: 8px;
+        background: #60cfeb;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, excepturi nesciunt iure ipsa maiores fugiat sapiente asperiores obcaecati placeat porro.</div>
+      <div class="card">Dolor, ducimus maxime quod veritatis placeat libero laboriosam fugiat distinctio aspernatur quam expedita ipsa id, ea dolorem molestiae eius deleniti!</div>
+      <div class="card">Quisquam porro dicta consectetur quae! Quam ea tempore, aliquid dolorem incidunt minima eaque. Atque consequuntur ut aliquam quaerat id sit.</div>
+      <div class="card">Iusto vero dicta aperiam neque minima? Aperiam libero ad iste atque unde magni accusamus, dolor nesciunt possimus eaque dolorum! Alias?</div>
+      <div class="card">Fugit veritatis similique nam quibusdam quam, sit, numquam quia voluptatibus quaerat assumenda qui quod repudiandae! Numquam impedit doloremque aliquam obcaecati.</div>
+      <div class="card">Hic tempora iure earum ratione voluptates quaerat et maxime fugit quibusdam neque molestiae unde, aliquid non doloremque nisi distinctio facere?</div>
+    </div>
+    <button type="button">Carregar mais</button>
+  </body>
+
+  <script>
+    const container = document.querySelector('.container');
+    const card = document.querySelector('.card');
+    const botao = document.querySelector('button');
+
+    botao.addEventListener('click', carregarMais, {once: true});
+
+    function carregarMais({ target: botao }) {
+      const textoAnterior = botao.innerText;
+      botao.innerText = 'Carregando...';
+      setTimeout(requisicao, 2000, { botao, textoAnterior });
+    }
+
+    function requisicao({ botao, textoAnterior }) {
+      for (let i = 0; i < 6; i++) {
+        container.appendChild(card.cloneNode(true));
+      }
+
+      botao.innerText = textoAnterior;
+      botao.addEventListener('click', carregarMais, {once: true});
+    }
+  </script>
+
+</html>

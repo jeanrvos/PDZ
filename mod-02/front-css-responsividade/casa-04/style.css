@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: #4D4F62;
+    padding: 60px;
+}
+
+header {
+    display: grid;
+    grid-auto-flow: row;
+    place-content: center;
+    place-items: center;
+    gap: 10px;
+    margin-bottom: 64px;
+}
+
+.title, h1 {
+    font-size: 36px;
+}
+
+.title:first-child {
+    font-weight: 200;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 15px;
+    max-width: 54ch;
+    font-weight: 400;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    /* gap: 30px; */
+}
+
+.mid-column {
+    display: grid;
+    /* gap: 15px; */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px;
+    min-width: 311px;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+    border-top: 4px solid black;
+    padding: 32px;
+    margin: 15px;
+}
+
+.card1 {
+    border-color: #44D3D2;
+}
+
+.card2 {
+    border-color: #EA5454;
+}
+
+.card3 {
+    border-color: #FCAE4A;
+}
+
+.card4 {
+    border-color: #549EF2;
+}
+
+h2 {
+    margin-bottom: 6px;
+}
+
+.imagem {
+    display: flex;
+    justify-content: end;
+}
+
+img{
+    width: 64px;
+    height: 64px;
+}
+
+@media (min-width: 375px) {
+    .title, h1 {
+      font-size: calc(1.5rem + ((1vw - 3.75px) * 1.1268));
+      min-height: 0vw;
+    }
+
+    .subtitle p {
+        width: 311px;
+    }
+
+    .card {
+        width: 311px;
+    }
+    
+  }
+
+@media (min-width: 1140px) {
+    .title, h1 {
+      font-size: 36px;
+    }
+}
+
+@media (max-width: 375px) {
+    
+    .subtitle p {
+        max-width: 311px;
+    }
+
+    .card {
+        max-width: 311px;
+    }
+    
+  }
+
+@media (max-width: 1100px) {
+    .cards {
+        display: grid;
+        grid-auto-flow: row;
+    }
+}
+  

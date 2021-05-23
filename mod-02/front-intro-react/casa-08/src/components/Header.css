@@ -1,0 +1,22 @@
+header {
+    width: 100vw;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+  }
+  
+  .container-menu img {
+    width: 50px;
+    height: auto;
+  }
+  
+  .container-menu {
+    display: grid;
+    width: 100vw;
+    grid-auto-flow: column;
+    place-content: center;
+    place-items: center;
+    column-gap: 1em;
+  }

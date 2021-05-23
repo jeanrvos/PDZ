@@ -1,0 +1,72 @@
+.movie-poster {
+    position: relative;
+    background-size: 168px 301px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 168px;
+    height: 301px;
+}
+  
+.poster-items {
+    position: absolute;
+    width: 168px;
+    height: 301px;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    padding: 8px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+.movie-poster .isStarred {
+    left: 9px;
+    top: 12px;
+    cursor: pointer;
+}
+  
+.movie-poster .isStarred.active {
+    fill: #FFFFFF;
+}
+
+.movie-info h2 {
+    font-size: 16px;
+}
+  
+.comprar {
+    background-color: #a785ed;
+    font-weight: bold;
+    font-size: 12px;
+    color: #EEE5FF;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+  
+.comprar:hover {
+    background: linear-gradient(0deg, rgba(46, 46, 46, 0.45), rgba(46, 46, 46, 0.45)), #a785ed;
+}
+  
+.comprar:active {
+    background: linear-gradient(0deg, rgba(123, 123, 123, 0.45), rgba(123, 123, 123, 0.45)), #A785ED;
+}
+  
+.movie-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FDFDFD;
+    margin-bottom: 8px;
+}
+  
+.movie-rating {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FBCD6E;
+}

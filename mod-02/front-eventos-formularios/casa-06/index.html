@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de professores</title>
+    <style>
+      body {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 500px;
+        place-content: center;
+        place-items: center;
+        gap: 15px;
+      }
+
+      img {
+        border-radius: 50%;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <input type="number" id="numFiltro" placeholder="Informe um id...">
+    <img src="">
+    <h1></h1>
+    <p><span>"Nenhum professor encontrado..."</span></p>
+    
+
+  </body>
+
+  <script>
+    const basePath = 'assets/';
+
+    const professores = [{
+      id: 1,
+      name: 'Leonardo',
+      stack: 'Back-end',
+      avatar: `${basePath}leo.jfif`
+    }, {
+      id: 2,
+      name: 'Guido',
+      stack: 'Fullstack',
+      avatar: `${basePath}guido.png`
+    }, {
+      id: 3,
+      name: 'Dina',
+      stack: 'Fullstack',
+      avatar: `${basePath}dina.jfif`
+    }, {
+      id: 4,
+      name: 'Daniel',
+      stack: 'Fullstack',
+      avatar: `${basePath}dani.png`
+    }, {
+      id: 5,
+      name: 'Vitinho',
+      stack: 'Frontend',
+      avatar: `${basePath}vitinho.png`
+    }, {
+      id: 6,
+      name: 'Juninho',
+      stack: 'Backend',
+      avatar: `${basePath}juninho.jfif`
+    }];
+
+    const input = document.querySelector('input');
+    const img = document.querySelector('img');
+    const name = document.querySelector('h1');
+    const stack = document.querySelector('p');
+    const span = document.querySelector('span');
+
+    input.addEventListener('blur', (event) => {
+      console.log(event);
+
+      const professor = professores.find(x => x.id === input.valueAsNumber);
+
+      console.log(professor);
+
+      if (professor !== undefined) {
+        img.src = professor.avatar;
+        name.innerText = professor.name;
+        stack.innerText = professor.stack;
+        span.style.display = "none";
+      } else {
+        img.src = "";
+        name.innerText = "";
+        stack.innerText = span.innerText;
+      };
+    });
+  </script>
+
+</html>

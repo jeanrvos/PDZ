@@ -1,0 +1,17 @@
+main h2 {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: #FDFDFD;
+    padding: 0 16px;
+    margin-top: 20px;
+}
+  
+main p {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #FDFDFD;
+    opacity: 0.8;
+}
+  

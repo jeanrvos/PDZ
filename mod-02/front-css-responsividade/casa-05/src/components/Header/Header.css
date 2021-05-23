@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 86px;
+}
+
+header button {
+    all: unset;
+    font-weight: bold;
+    background-color: #E8EFF2;
+    color: #162542;
+    padding: 18px 26px;
+    border-radius: 8px;   
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #162542;
+    color: #FFFFFF;
+}
+
+@media (width: 768px) {
+    header {
+        margin-bottom: 62px;
+    }
+}
+
+@media (width: 375px) {
+    header {
+        margin-bottom: 64px;
+    }
+}
